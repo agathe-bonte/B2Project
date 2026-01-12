@@ -1,0 +1,12 @@
+<svg id="Composant_4_1" data-name="Composant 4 – 1" xmlns="http://www.w3.org/2000/svg" width="205" height="85" viewBox="0 0 205 85">
+  <g id="Rectangle_138" data-name="Rectangle 138" transform="translate(2 8)" fill="#dd1157" stroke="#dd1157" stroke-width="1">
+    <rect width="203" height="69" rx="34.5" stroke="none"/>
+    <rect x="0.5" y="0.5" width="202" height="68" rx="34" fill="none"/>
+  </g>
+  <text id="Live" transform="translate(135 58)" fill="#fff" font-size="45" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-47.677" y="0">Live</tspan></text>
+  <g id="Ellipse_22" data-name="Ellipse 22" fill="#fff" stroke="#dd1157" stroke-width="4">
+    <circle cx="42.5" cy="42.5" r="42.5" stroke="none"/>
+    <circle cx="42.5" cy="42.5" r="40.5" fill="none"/>
+  </g>
+  <path id="Polygone_1" data-name="Polygone 1" d="M17.22,3.982a3,3,0,0,1,5.063,0L36.572,26.457a3,3,0,0,1-2.532,4.61H5.462a3,3,0,0,1-2.532-4.61Z" transform="translate(62.292 22.749) rotate(90)" fill="#dd1157"/>
+</svg>

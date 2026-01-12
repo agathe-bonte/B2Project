@@ -1,0 +1,110 @@
+:root {
+  --wrapper: 1200px;
+  --marge: calc((100% - var(--wrapper)) / 2);
+  --padding: 20px;
+  --border-radius:20px;
+  --background-color: #ffffff;
+  --text-color: #333;
+  --font-size: 1.525rem;
+  --font-family: "karla", sans-serif;
+  --box-shadow: 0 0 6px rgba(0,0,0, .4);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font: normal 10px var(--font-family), Arial, Verdana, Helvetica, sans-serif;
+  color: var(--text-color);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.container{
+    max-width: var(--wrapper);
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    height: 405px;
+    padding: 0.5em;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    background: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+
+.card-img{
+    position: relative;
+    flex: 1;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content{
+    position: relative;
+    flex: 1;
+    padding: 1em;
+}
+
+.card-content__room{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.title3{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #9c9c9c;
+}
+
+.info-hour{
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    width: 70px;
+    height: 29px;
+    z-index: 1;
+    background: url("./img/info-live.svg") 0 0 no-repeat;
+    background-size: contain ;
+}
+
+.card-content__btn{
+    position: absolute;
+    bottom: 0.7em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn{
+    padding: .7em 2em;
+    text-align: center;
+    border-radius: var(--border-radius);
+    background: var(--background-color);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    font-size: 1.4rem;
+}
