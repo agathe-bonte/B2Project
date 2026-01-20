@@ -1,3 +1,18 @@
+@font-face {
+        font-family: FibraOne-Bold;
+        src: url("./fonts/FibraOne-Bold.otf");
+}
+
+@font-face {
+        font-family: FibraOne-Heavy;
+        src: url("./fonts/FibraOne-Heavy.otf");
+}
+
+@font-face {
+        font-family: Noyh-Regular;
+        src: url("./fonts/Noyh-Regular.otf");
+}
+
 :root {
   --wrapper: 1200px;
   --marge: calc((100% - var(--wrapper)) / 2);
@@ -6,7 +21,8 @@
   --text-color: #333;
   --color-primary: #FFDA03;
   --font-size: 1.525rem;
-  --font-family: "karla", sans-serif;
+  --font-family:  Noyh-Regular, sans-serif;
+  --font-title:  FibraOne-Heavy, sans-serif;
   --box-shadow: 0 0 6px rgba(0,0,0, .4);
 }
 
@@ -37,6 +53,7 @@ body {
 .container{
     max-width: var(--wrapper);
     margin: 0 auto;
+    padding: 0 var(--padding);
 }
 
 .flex-row{
@@ -82,6 +99,10 @@ nav li:hover{
     object-fit: fill;
 }
 
+img{
+    max-width: 100%;
+}
+
 .user{
     position: relative;
     width: 40px;
@@ -97,10 +118,55 @@ nav li:hover{
     object-fit: fill;
 }
 
-.product{
-    margin: 6rem 0;
+h2{
+  font-size: 6rem;
+  font-family: var(--font-title);
+  margin: 1rem 0 1.6rem 0;
+}
+.subtitle{
+  font-size: 2rem;
+  margin: 1rem 0 .5rem 0;
 }
 
+section {
+  margin: 3rem 0;
+}
+
+
+/********************************
+Slider produit
+********************************/
+.product{
+    margin: 6rem 0;
+    align-items: start;
+}
+
+.product-slider,
+.product-content{
+    width: 50%; 
+}
+.product-content{
+  margin-left: 3rem;
+}
+.content-info{
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: system-ui;
+}
+.content-price{
+  font-size: 4.5rem;
+}
+.product-litre{
+    justify-content: flex-start;
+}
+.litre-1{
+  padding: 0.8em 2em;
+  background: #e6e4e4;
+  width: 70px;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 .5rem;
+}
 .slick-prev {
     left: 5px !important;
     z-index: 2;
@@ -110,11 +176,74 @@ nav li:hover{
     z-index: 2;
 }
 
-.product-slider{
-    width: 50%;
+/********************************
+Nos produits
+********************************/
+.card-wrapper{
+  justify-content: center;
 }
 
-.product-slider img{
-    max-width: 100%;
+.card-product{
+  flex: 0 0 33%;
+  margin: 0 1rem;
+  text-align: center;
+}
 
+/********************************
+Accordion produit
+********************************/
+
+.accordion {
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.accordion-item {
+  margin-bottom: 2.5rem;
+}
+
+.accordion-header {
+  position: relative;
+  width: 100%;
+  padding: 2em;
+  background: var(--color-primary);
+  border: none;
+  text-align: left;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.accordion-header:after{
+  position: absolute;
+  content: "";
+  right: 2rem;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #000;
+  transition: all 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.5em;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.accordion-content p {
+  margin: 1.5rem 0;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 100%;
+  padding: 0 2em;
+}
+
+.accordion-item.active .accordion-header:after {
+  transform: rotate(180deg);
 }
