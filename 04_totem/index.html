@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Totem</title>
+    <!-- style -->
     <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="library/slick-theme.css">
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- library -->
     <link rel="stylesheet" href="library/slick-theme.css">
     <link rel="stylesheet" href="library/slick.css">
     <script src="library/slick.min.js" defer></script>
@@ -28,18 +30,73 @@
         </div>
     </header>
     <main>
-        <section class="product">
-            <div class="container">
-                <div class="product-slider js-slider">
-                    <img src="assets/img/img1.png" alt="">
-                    <img src="assets/img/img2.png" alt="">
+        <div class="container">
+            <!-- section product -->
+            <section class="product flex-row">
+                    <div class="product-slider js-slider ">
+                        <img src="assets/img/img1.png" alt="produit 1">
+                        <img src="assets/img/img2.png" alt="produit 2">
+                    </div>
+                    <div class="product-content">
+                        <h2>Kefir Houblons</h2>
+                        <h3 class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p class="content-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aperiam maiores porro, saepe ipsa voluptatibus laudantium provident velit in dicta, aspernatus doloremque!</p>
+                        <div class="info-product">
+                            <div class="content-price">5,90€</div>
+                            <div class="product-litre flex-row">
+                                <div class="litre-1">33cl</div>
+                                <div class="litre-1 is-active">75cl</div>        
+                            </div>
+                            <div class="product-quantity flex-row">
+                                <div class="quantity-1">-</div>
+                                <div class="quantity-nb">1</div>
+                                <div class="quantity-1">+</div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="card">
+                <h2>Nos produits</h2>
+                <div class="card-wrapper flex-row">
+                    <div class="card-product">
+                        <img src="assets/img/img1.png" alt="produit 1">
+                        <div class="card-content">
+                            <h3 class="subtitle">Kéfir nature</h3> 
+                            <div class="content-info">33cl</div>
+                        </div>
+                    </div>
+                    <div class="card-product">
+                        <img src="assets/img/img2.png" alt="produit 2">
+                        <div class="card-content">
+                            <h3 class="subtitle">Kéfir nature</h3> 
+                            <div class="content-info">75cl</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-content">
-
+            </section>
+            <!-- section accordion -->
+            <section class="accordion">
+                <h2>On repond à vos questions</h2>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 1</button>
+                    <div class="accordion-content">
+                    <p>Contenu de la section 1.</p>
+                    </div>
                 </div>
-            </div>
-
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 2</button>
+                    <div class="accordion-content">
+                    <p>Contenu de la section 2.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 3</button>
+                    <div class="accordion-content">
+                    <p>Contenu de la section 3.</p>
+                    </div>
+                </div>
         </section>
+        </div>
     </main>
 
 </body>
